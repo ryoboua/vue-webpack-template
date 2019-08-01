@@ -1,0 +1,52 @@
+{
+  "name": "test_analytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server --config ./webpack/dev.webpack.js",
+    "build": "webpack --config ./webpack/prod.webpack.js",
+    "test": "mocha-webpack --webpack-config ./webpack/test.webpack.js --require ./test/setup.js ./test/**/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^15.1.1",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^6.2.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "prettier-webpack-plugin": "^1.2.0",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "url-loader": "^2.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
