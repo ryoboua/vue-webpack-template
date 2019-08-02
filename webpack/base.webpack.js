@@ -17,13 +17,13 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   enforce: 'pre',
-      //   test: /\.(js|vue)$/,
-      //   exclude: /node_modules/,
-      //   loader: 'eslint-loader',
-      //   options: {}
-      // },
+      {
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {}
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -61,7 +61,7 @@ module.exports = {
     new HtmlWebpackPlugin({ template: './src/index.html', inject: 'body' }),
     new VueLoaderPlugin(),
     new PrettierPlugin({
-      singleQuote: true,
+      singleQuote: false,
       semi: true,
       bracketSpacing: true
     })

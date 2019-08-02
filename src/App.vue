@@ -5,18 +5,18 @@
 </template>
 
 <script>
-import Counter from './Counter.vue';
+import Counter from "./Counter.vue";
 export default {
   components: {
     Counter
   },
   data() {
     return {
-      message: 'hello'
+      message: "hello"
     };
   },
   computed: {
-    message: 'Reggie'
+    message: "Reggie"
   }
 };
 </script>
@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 #app {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: green;
 }
 </style>
